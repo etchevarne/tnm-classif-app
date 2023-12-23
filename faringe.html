@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estadiamento Clínica TNM - Faringe </title>
+  <!-- CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <header class="p-3 bg-dark text-white">
+    <br></br>
+    <h1 class="centralizado">Estadiamento TNM - Faringe</h1>
+    <br></br>
+  </header>
+
+  <div class="navbar navbar-dark bg-dark d-flex justify-content-center">
+    <div class="btn-group-vertical">
+        <a href="laringe.html" class="btn btn-outline-light my-2 rounded-pill">Laringe</a>
+        <a href="cavidadeoral.html" class="btn btn-outline-light me-2 rounded-pill">Cavidade Oral</a>
+        <a href="glandulassalivares.html" class="btn btn-outline-light my-2 rounded-pill">Glândulas Salivares</a>
+        <a href="tireoide.html" class="btn btn-outline-light my-2 rounded-pill">Tireóide</a>
+        <!-- Adicione mais botões conforme necessário -->
+    </div>
+</div>
+<br></br>  
+
+  <main class="container my-4">
+        
+    <form>
+      <div class="form-group">
+        <label for="sublocalizacao">Sublocalização:</label>
+        <select id="sublocalizacao" name="sublocalizacao" class="form-control">
+          <option value="">Selecione a opção</option>
+          <option value="nasofaringe">Nasofaringe</option>
+          <option value="orofaringe">Orofaringe</option>
+          <option value="hipofaringe">Hipofaringe</option>
+        </select>
+      </div>
+
+      <label for="t">T:</label>
+      <select id="t" name="t" class="form-control">
+        <option value="">Selecione a opção</option>
+      </select>
+  
+      <br> </br>
+      <label for="n">N:</label>
+      <select id="n" name="n" class="form-control">
+        <option value="">Selecione a opção</option>
+        <option value="nx">NX - Linfonodos regionais não podem ser avaliados</option>
+        <option value="n0">N0 - Sem metástase em linfonodo regional</option>
+        <option value="n1">N1 - Metástase em linfonodo único ipsilateral, menor que 3 cm em maior dimensão</option>
+        <option value="n2a">N2a - Metástase em linfonodo único ipsilateral, entre 3 cm e 6 cm em maior dimensão</option>
+        <option value="n2b">N2b - Múltiplos linfonodos ipsilaterais, nenhum maior que 6cm</option>
+        <option value="n2c">N2c - Metástase em linfonodos bilaterais ou contralaterais, nenhum maior que 6 cm em maior dimensão</option>
+        <option value="n3a">N3a - Metástase em linfonodo maior que 6 cm na maior dimensão e acometimento extra nodal negativo;</option>
+        <option value="n3b">N3b - Metástase em linfonodo maior que 6 cm na maior dimensão e acometimento extra nodal positivo;</option>
+      </select>
+  
+      <br> </br>
+      <label for="m">M:</label>
+      <select id="m" name="m" class="form-control">
+        <option value="">Selecione a opção</option>
+        <option value="m0">Mx - Sem avaliação de metástases à distância</option>
+        <option value="m0">M0 - Sem metástases à distância</option>
+        <option value="m1">M1 - Metástases à distância presentes</option>
+      </select>
+
+      <br></br>
+      <label for="hpv">HPV(p16+):</label>
+        <select id="hpv" name="hpv">
+        <option value="">Selecione uma opção</option>
+        <option value="positivo">Positivo</option>
+        <option value="negativo">Negativo</option>
+        </select>
+        <br></br>
+
+  
+
+    <button type="button" id="calcular-estagio-faringe" class="btn btn-primary btn-lg">Calcular estágio</button>
+     
+  </form>
+    <br> <br>
+
+    <div id="estagio-tumor" class="mt-4"></div>
+    <br> <br>
+    <div id="resumo-opcoes" class="mt-4"></div>
+    <br> </br>
+    <div id="comentario-prognostico" class="mt-4"></div>
+    
+    <br> </br>
+    <div id="taxa-sobrevida" class="mt-4">    </div> <!-- Nova div para taxa de sobrevida -->
+    <br> </br>
+    <div id="tumores-comuns" class="mt-4"></div>
+    <br> </br> 
+    <div id="fonte"> 
+    </div>
+
+</main>
+
+<footer>
+
+  <a class="btn text-light" href="index.html">Retornar ao Menu Inicial</a>
+  <a class="btn text-light" href="faringe.html">Retornar ao Topo</a>
+  <a class = "btn text-light" button id="copy-btn"> Copiar resultado </button></a>
+
+
+</footer>
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script>
+  <script src="faringescript2.js" defer></script>
+</body>
+
+</html>

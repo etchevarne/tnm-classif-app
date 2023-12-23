@@ -1,0 +1,361 @@
+.menuprincipal {
+  background-color: #023b57; /* Azul-marinho */
+  color: #ffffff;  
+  image-orientation: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Sombra para dar profundidade */
+}
+
+
+.centralizado {
+  text-align: center;
+}
+
+
+body {
+  background-color: #f8f9fa;
+  font-family: 'Roboto', sans-serif; /* Roboto é a fonte padrão usada no Material Design */
+  color: #A0A0A0;
+  border: 10px solid #5CC6BA; /* Cor e espessura da borda */
+  border-radius: 10px; /* Raio do canto da borda */
+  padding: 20px; /* Espaçamento interno dentro da borda */
+}
+
+.btn-outline-secondary {
+  background-color: #5CC6BA; /* Azul-marinho */
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none; /* Remover decoração de hyperlink no hover, focus e active */
+  outline: none; /* Remover outline no focus */
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 5px; /* Bordas arredondadas */
+  width: 100%; /* Faz o botão preencher toda a largura disponível */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Sombra para dar profundidade */
+}
+
+.btn-outline-secondary:hover,
+.btn-outline-secondary:focus,
+.btn-outline-secondary:active {
+  text-decoration: none; /* Remover decoração de hyperlink no hover, focus e active */
+  outline: none; /* Remover outline no focus */
+}
+
+
+.header, .footer {
+  text-align: center;  
+  padding: 10px;
+  height: 120px;
+  background-color: #5CC6BA; /* Azul-marinho */
+  color: #ffffff;  
+  image-orientation: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Sombra para dar profundidade */
+}
+
+.header img {
+  width: 100px;
+  height: 100px;
+  
+
+  border-radius: 60%;
+  margin-top: 0px;
+  margin-bottom: 60px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Sombra para dar profundidade */
+
+
+}
+
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+}
+
+nav ul li {
+  width: calc(33.33% - 20px);
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f6f9;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  padding: 10px;
+}
+
+nav li img {
+  width: 60px;
+  height: 62px;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Sombra para dar profundidade */
+}
+
+.container {
+  max-width: 600px;  
+  margin: 0 auto;  
+  padding: 20px;
+}
+
+button {
+  background-color: #5CC6BA; /* Azul-marinho */
+  color: #ffffff;  
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  font-size: 16px;
+  margin: 10px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 5px; /* Bordas arredondadas */
+  width: 100%; /* Faz o botão preencher toda a largura disponível */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Sombra para dar profundidade */
+}
+
+button:hover {
+  background-color: #717F7F; 
+  color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra maior no hover para indicar elevação */
+}
+
+select.form-control, .tumores-comuns {
+  margin-bottom: 20px;
+  border-radius: 5px; /* Bordas arredondadas */
+  border: none; /* Remove a borda padrão */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Sombra para dar profundidade */
+}
+
+select {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  font-family: 'Roboto', sans-serif;
+  color: #A0A0A0;
+}
+
+.estagio-tumor, .comentario-prognostico, .resumo-opcoes {
+  font-size: 18px;
+  color: #A0A0A0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+#t, #n, #m {
+  width: 200px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navbar a.btn {
+  margin: 5px;
+  padding: 10px 20px;
+}
+.navbar a.btn {
+  text-decoration: none;  /* Remove o sublinhado */
+  color: #ffffff;  /* Cor do texto */
+  background-color: #5CC6BA;  /* Cor do fundo do botão */
+  border-radius: 5px;  /* Bordas arredondadas */
+  transition: background-color 0.3s ease;  /* Transição suave da cor de fundo */
+}
+
+.navbar a.btn:hover {
+  background-color: #717F7F;  /* Cor do fundo do botão quando o mouse passa por cima */
+}
+
+@media (max-width: 576px) {
+  .navbar a.btn {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+  }
+}
+
+footer {
+  background-color: #5CC6BA;
+  color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer a.btn {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #5CC6BA;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin: 0 5px; /* Adicionamos um espaçamento horizontal entre os botões */
+}
+
+footer a.btn:hover {
+  background-color: #717F7F;
+}
+
+footer a.btn:nth-child(2) {
+  margin-left: auto;
+}
+
+footer a.btn:first-child {
+  margin-right: auto;
+}
+
+
+
+.card-link {
+  text-decoration: none;  /* Remove o sublinhado */
+  color: #ffffff;  /* Cor do texto */
+  background-color: #5CC6BA;  /* Cor do fundo do botão */
+  padding: 10px 20px;  /* Espaço interno */
+  border-radius: 5px;  /* Bordas arredondadas */
+  transition: background-color 0.3s ease;  /* Transição suave da cor de fundo */
+  display: inline-block;  /* Permite a estilização do tamanho e espaçamento */
+  margin-top: 10px;  /* Espaço acima do botão */
+}
+
+.card-link:hover {
+  background-color: #717F7F;  /* Cor do fundo do botão quando o mouse passa por cima */
+}
+
+nav .row .col-md-4 img {
+    width: 100px;
+    height: 100px;
+}
+
+.nav-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 800px; /* Ajuste este valor para o máximo que você deseja */
+}
+
+.card {
+  margin: 15px;
+  width: calc((100% / 2) - 20px); /* Isso vai dividir a linha em 2 cartões */
+  text-align: center;
+}
+
+.card-img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.card-img-top {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+
+.card-body {
+  margin-top: 10px;
+}
+
+
+
+@media (max-width: 800px) { /* Ajuste o valor de 800px para quando você deseja que eles empilhem verticalmente */
+  .card {
+    width: 60%;
+       
+
+
+  }
+}
+#imagem-container {
+  text-align: center; /* Alinhar a imagem ao centro */
+  margin-top: 20px; /* Espaçamento superior para separar do conteúdo abaixo */
+}
+
+#imagem-container img {
+  max-width: 100%; /* Garantir que a imagem não ultrapasse a largura máxima do contêiner */
+}
+.btn-primary {
+  background-color: #5CC6BA;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+.footer-custom {
+  background-color: #5CC6BA;
+  color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-custom .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-custom a.btn {
+  text-decoration: bold;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin: 0 5px;
+}
+
+.footer-custom a.btn:hover {
+  background-color: #717F7F;
+}
+
+.footer-custom a.btn:nth-child(2) {
+  margin-left: auto;
+}
+
+.footer-custom a.btn:first-child {
+  margin-right: auto;
+}
+
+.footer-custom img {
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
+
+}
+#infoDiv {
+  display: none;
+  background-color: white;
+  padding: 20px;
+  border: 1px solid;
+  margin-top: 20px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}

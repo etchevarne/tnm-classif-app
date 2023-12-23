@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estadiamento Clínica TNM de Tumores de Cabeça e Pescoço</title>
+  <!-- CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/css/bootstrap.min.css" rel="stylesheet"> 
+  <link rel="stylesheet" type="text/css" href="style.css">
+  
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="text-center py-5">Calculadora TNM 8th ed UICC/AJCC</h1>
+    </div>
+    <div> 
+      <img src="images\tnm.png" alt="tnm_class" width="150" height="150">
+      
+    </div>
+    
+  </header>
+  
+  
+  
+  <br> </br>
+  <br> </br>
+  <br> </br>
+  <nav>
+    <ul class="row row-cols-3">
+      <li class="col">
+        <a href="laringe.html" class="d-flex flex-column align-items-center justify-content-center text-center">
+          <div class="card-img-container">
+            <img src="images\laringe.png" class="card-img-top" alt="Ícone de Laringe">
+          </div>
+          <p class="btn btn-primary">LARINGE</p>
+        </a>
+      </li>
+      <li class="col">
+        <a href="faringe.html" class="d-flex flex-column align-items-center justify-content-center text-center">
+          <div class="card-img-container">
+            <img src="images\faringe.png" class="card-img-top" alt="Ícone de Faringe">
+          </div>
+          <p class="btn btn-primary">FARINGE</p>
+        </a>
+      </li>
+      <li class="col">
+        <a href="cavidadeoral.html" class="d-flex flex-column align-items-center justify-content-center text-center">
+          <div class="card-img-container">
+            <img src="images\motuhdj.png" class="card-img-top" alt="Ícone de Boca">
+          </div>
+          <p class="btn btn-primary">CAVIDADE ORAL</p>
+        </a>
+      </li>
+      
+      <li class="col">
+        <a href="glandulassalivares.html" class="d-flex flex-column align-items-center justify-content-center text-center">
+          <div class="card-img-container">
+            <img src="images\glandsalivares.png" class="card-img-top" alt="Ícone de Glândulas Salivares">
+          </div>
+          <p class="btn btn-primary">GLÂNDULAS SALIVARES</p>
+        </a>
+      </li>
+      <li class="col">
+        <a href="index.html" class="d-flex flex-column align-items-center justify-content-center text-center">
+          <div class="card-img-container">
+          <img src="images\watermark.png" class="card-img-top" alt="marcadagua">
+          </div>
+          <p class="btn btn-primary">Harts</p>
+        </a>
+      </li>
+      <li class="col">
+        <a href="tireoide.html" class="d-flex flex-column align-items-center justify-content-center text-center">
+          <div class="card-img-container">
+          <img src="images\tireoide.png" class="card-img-top" alt="Ícone de Tireoide">
+          </div>
+          <p class="btn btn-primary">TIREÓIDE</p>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  
+  
+  <br> </br>
+  
+  <footer class="footer footer-custom">
+    <div class="container">
+      <a href="index.html" class="btn btn-primary">HOME</a>
+      <button class="btn btn-secondary" id="infoButton">Mais Informações</button>
+
+    </div>
+    <div><img src="images\watermark.png" alt="logomark" width="40" height="40">
+    </div>
+
+  </footer>
+  <div id="infoDiv">
+    <p>A Classificação TNM é uma metodologia universalmente reconhecida para o estadiamento de tumores malignos. Ela permite que profissionais de saúde categorizem cada caso de câncer com base em três componentes fundamentais:</p>
+
+      <p>T (Tumor): Refere-se ao tamanho original (primário) do tumor e se ele se infiltrou em áreas próximas.</p>
+      <p>N (Nódulos linfáticos): Indica se o câncer se espalhou para os gânglios linfáticos próximos.</p>
+      <p>M (Metástase): Descreve se o câncer se disseminou para outras partes do corpo.</p>
+      <p> A classificação TNM é uma ferramenta vital para a planificação do tratamento e a estimativa do prognóstico do paciente. Ela também auxilia na troca de informações precisas entre profissionais de saúde e na condução de investigações clínicas.</p>
+      
+      <p>Para o desenvolvimento desta calculadora, recorreu-se à 8ª edição da Classificação de Tumores Malignos do TNM (Tumor Node Metastasis) da União Internacional para o Controle do Câncer (UICC) e da American Joint Committee on Cancer (AJCC). Estas são as fontes mais atualizadas e confiáveis disponíveis para o estadiamento do câncer, e estão em conformidade com os padrões internacionais para a classificação de câncer.</p>
+      
+      <p>As informações presentes nesta calculadora são destinadas a profissionais de saúde para auxiliar na avaliação rápida do estágio do câncer de um paciente. No entanto, a calculadora não substitui a avaliação clínica e a interpretação individualizada por profissionais de saúde qualificados.
+      </p>
+  </div>
+
+  <script>
+    document.getElementById('infoButton').addEventListener('click', function() {
+      var infoDiv = document.getElementById('infoDiv');
+      if (infoDiv.style.display === 'none') {
+        infoDiv.style.display = 'block';
+      } else {
+        infoDiv.style.display = 'none';
+      }
+    });
+  </script>
+  
+
+  
+  <!-- JavaScript Bundle with Popper --> 
+  
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script>
+  
+  
+   
+  
+</body>
+
+</html>
