@@ -306,6 +306,26 @@ nav .row .col-md-4 img {
   cursor: pointer;
 }
 
+.card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.card-header-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border-color: #efeeee;
+}
+
+.card-header-h1 {
+  background-color: #5CC6BA;
+  color: white;
+  padding: 4rem;
+}
 
 .footer-custom {
   background-color: #5CC6BA;
