@@ -19,8 +19,7 @@ body {
   border-radius: 10px; /* Raio do canto da borda */
   padding: 20px; /* Espaçamento interno dentro da borda */
 }
-
-.btn-outline-secondary {
+.btn-group-vertical{
   background-color: #5CC6BA; /* Azul-marinho */
   color: #ffffff;
   border: none;
@@ -36,6 +35,9 @@ body {
   border-radius: 5px; /* Bordas arredondadas */
   width: 100%; /* Faz o botão preencher toda a largura disponível */
   box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Sombra para dar profundidade */
+}
+.btn-outline-secondary {
+  
 }
 
 .btn-outline-secondary:hover,
